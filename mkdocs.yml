@@ -1,0 +1,32 @@
+site_name: here
+# Project information
+site_url: https://andrewcstewart.github.io/here/
+site_author: Andrew Stewart
+site_description: >-
+  A simpler way to find your files (inspired by r-here)
+theme:
+  name: "material"
+  palette:
+    primary: blue
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/github  
+
+repo_url: https://github.com/andrewcstewart/here
+repo_name: andrewcstewart/here
+
+plugins:
+- search
+- mkdocstrings
+- include-markdown
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes  
+
+nav:
+    - Getting Started: index.md
+    - Reference: reference.md
