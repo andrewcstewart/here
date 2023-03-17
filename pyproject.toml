@@ -10,8 +10,20 @@ python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+
+[tool.ruff] 
+line-length = 120
+ignore = ["E741"]
+show-source = true
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
