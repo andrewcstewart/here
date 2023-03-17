@@ -34,4 +34,4 @@ import pandas as pd
 df.write_csv(here("data/penguins.csv"))
 ```
 
-These relative paths work regardless of where the associated source file lives inside your project, like analysis projects with data and reports in different subdirectories. 
+These relative paths work regardless of where the associated source file lives inside your project, like analysis projects with data and reports in different subdirectories.
