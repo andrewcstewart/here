@@ -21,3 +21,17 @@ from here import here
 here()
 here("path/to/file.txt")
 ```
+
+You can build a path relative to the top-level directory in order to read or write a file:
+
+```
+here("data/penguins.csv")
+
+import pandas as pd
+
+# ...
+
+df.write_csv(here("data/penguins.csv"))
+```
+
+These relative paths work regardless of where the associated source file lives inside your project, like analysis projects with data and reports in different subdirectories. 
