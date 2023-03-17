@@ -27,7 +27,12 @@ jobs:
       - name: Run image
         uses: abatilo/actions-poetry@v2
       - name: Export poetry requirements.txt
-        run: poetry export --with dev -f requirements.txt -o requirements.txt --without-hashes
+        run: >
+          # poetry export --with dev -f requirements.txt -o requirements.txt --without-hashes
+          echo "mkdocs-autorefs" >> requirements.txt
+          echo "mkdocs-material" >> requirements.txt
+          echo "mkdocstrings" >> requirements.txt
+          echo "mkdocstrings-python" >> requirements.txt
 
       - name: Deploy MkDocs
       # You may pin to the exact commit or the version.
