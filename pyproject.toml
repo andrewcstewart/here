@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "here"
+version = "0.1.0"
+description = "A simpler way to find your files"
+authors = ["Andrew Stewart <andrew.c.stewart@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
