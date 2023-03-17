@@ -18,9 +18,15 @@ repo_name: andrewcstewart/here
 plugins:
 - search
 - mkdocstrings
+- include-markdown
+
 
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
   - footnotes  
+
+nav:
+    - Getting Started: index.md
+    - Reference: reference.md

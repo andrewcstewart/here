@@ -12,5 +12,11 @@ fix:
 	@echo
 	poetry run ruff --fix ./src
 
-make build:
+build:
 	poetry build
+
+docs:
+	poetry run mkdocs build
+
+serve:
+	poetry run mkdocs serve

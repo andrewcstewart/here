@@ -1,4 +1,5 @@
 # here
+<!--intro-start-->
 
 The goal of the `here` package is to enable easy file referencing in project-oriented workflows. `here` uses the top-level directory of a project, as identified by the presence of a `pyproject.toml` file, to easily build paths to files.
 
@@ -35,3 +36,5 @@ df.write_csv(here("data/penguins.csv"))
 ```
 
 These relative paths work regardless of where the associated source file lives inside your project, like analysis projects with data and reports in different subdirectories.
+
+<!--intro-end-->
